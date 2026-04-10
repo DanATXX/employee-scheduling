@@ -55,6 +55,7 @@ def build_cqm():
         # Incrementally add objective terms as list of (label, bias)
         cqm.objective.add_linear_from([*zip(labels, preference)])
 
+    print(preferences.items())
     return cqm
 
 # Solve the problem
